@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EA41ECFF2755360A002404B3 /* StatePropertyWrapperSimpleExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41ECFE2755360A002404B3 /* StatePropertyWrapperSimpleExampleApp.swift */; };
-		EA41ED012755360A002404B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41ED002755360A002404B3 /* ContentView.swift */; };
+		EA41ED012755360A002404B3 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41ED002755360A002404B3 /* CircleView.swift */; };
 		EA41ED032755360F002404B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA41ED022755360F002404B3 /* Assets.xcassets */; };
 		EA41ED062755360F002404B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA41ED052755360F002404B3 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		EA41ECFB2755360A002404B3 /* StatePropertyWrapperSimpleExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatePropertyWrapperSimpleExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA41ECFE2755360A002404B3 /* StatePropertyWrapperSimpleExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePropertyWrapperSimpleExampleApp.swift; sourceTree = "<group>"; };
-		EA41ED002755360A002404B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EA41ED002755360A002404B3 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		EA41ED022755360F002404B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA41ED052755360F002404B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				EA41ECFE2755360A002404B3 /* StatePropertyWrapperSimpleExampleApp.swift */,
-				EA41ED002755360A002404B3 /* ContentView.swift */,
+				EA41ED002755360A002404B3 /* CircleView.swift */,
 				EA41ED022755360F002404B3 /* Assets.xcassets */,
 				EA41ED042755360F002404B3 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA41ED012755360A002404B3 /* ContentView.swift in Sources */,
+				EA41ED012755360A002404B3 /* CircleView.swift in Sources */,
 				EA41ECFF2755360A002404B3 /* StatePropertyWrapperSimpleExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
