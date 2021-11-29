@@ -10,7 +10,9 @@ import SwiftUI
 struct CircleView: View {
     
     // MARK: Stored properties
-    let radius: Double = 10.0
+    // @State is a "property wrapper"
+    // the property wrapper alerts SwiftUI to the fact that we want chances to this property to show in the UI.
+   @State var radius: Double = 10.0
     
     // MARK: Computed property
     var area: Double {
@@ -22,17 +24,31 @@ struct CircleView: View {
         VStack(alignment: .leading, spacing: 20){
             
             // Input
-            Text("Radius")
+            Text("Radius:")
                 .bold()
             
-            TextField("Radius",
-                      text: .constant(""), prompt: Text("e.g. : 24.5"))
+            // The syntax of $ says that to use the property, radius, and BIND it to this control
+            Slider(value: $radius,
+                   in: 0.0...100.0,
+                   label: {
+                Text("Radius")
+            },
+                   minimumValueLabel: {
+                Text("0.0")
+            },
+                   maximumValueLabel: {
+                Text("100.0")
+            })
+            
+//            TextField("Radius",
+//                      text: .constant("10.0"), prompt: Text("e.g. : 24.5"))
+//                .keyboardType(  .decimalPad)
             
             // Output
-            Text("Area")
+            Text("Area:")
                 .bold()
             
-            Text("24.0 square units")
+            Text("314.2 square units")
             
             Spacer()
             
