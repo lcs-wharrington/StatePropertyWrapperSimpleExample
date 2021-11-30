@@ -11,6 +11,7 @@
 		EA41ED012755360A002404B3 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41ED002755360A002404B3 /* CircleView.swift */; };
 		EA41ED032755360F002404B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA41ED022755360F002404B3 /* Assets.xcassets */; };
 		EA41ED062755360F002404B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA41ED052755360F002404B3 /* Preview Assets.xcassets */; };
+		EA41ED0D275541D3002404B3 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41ED0C275541D3002404B3 /* RectangleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		EA41ED002755360A002404B3 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		EA41ED022755360F002404B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA41ED052755360F002404B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA41ED0C275541D3002404B3 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				EA41ECFE2755360A002404B3 /* StatePropertyWrapperSimpleExampleApp.swift */,
 				EA41ED002755360A002404B3 /* CircleView.swift */,
+				EA41ED0C275541D3002404B3 /* RectangleView.swift */,
 				EA41ED022755360F002404B3 /* Assets.xcassets */,
 				EA41ED042755360F002404B3 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				EA41ED012755360A002404B3 /* CircleView.swift in Sources */,
 				EA41ECFF2755360A002404B3 /* StatePropertyWrapperSimpleExampleApp.swift in Sources */,
+				EA41ED0D275541D3002404B3 /* RectangleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

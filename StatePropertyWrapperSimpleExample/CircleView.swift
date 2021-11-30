@@ -11,8 +11,8 @@ struct CircleView: View {
     
     // MARK: Stored properties
     // @State is a "property wrapper"
-    // the property wrapper alerts SwiftUI to the fact that we want chances to this property to show in the UI.
-   @State var radius: Double = 10.0
+    // the property wrapper alerts SwiftUI to the fact that we want changes to this property to show in the UI.
+    @State var radius: Double = 50.0
     
     // MARK: Computed property
     var area: Double {
@@ -27,28 +27,38 @@ struct CircleView: View {
             Text("Radius:")
                 .bold()
             
-            // The syntax of $ says that to use the property, radius, and BIND it to this control
-            Slider(value: $radius,
-                   in: 0.0...100.0,
-                   label: {
-                Text("Radius")
-            },
-                   minimumValueLabel: {
-                Text("0.0")
-            },
-                   maximumValueLabel: {
-                Text("100.0")
-            })
+            Group{
+                
+                // show the selected radius value
+                HStack{
+                    Spacer()
+                    Text("\(radius)")
+                    Spacer()
+                }
+                // The syntax of $ says that to use the property, radius, and BIND it to this control
+                Slider(value: $radius,
+                       in: 0.0...100.0,
+                       label: {
+                    Text("Radius")
+                },
+                       minimumValueLabel: {
+                    Text("0.0")
+                },
+                       maximumValueLabel: {
+                    Text("100.0")
+                })
+            }
             
-//            TextField("Radius",
-//                      text: .constant("10.0"), prompt: Text("e.g. : 24.5"))
-//                .keyboardType(  .decimalPad)
+            
+            //            TextField("Radius",
+            //                      text: .constant("10.0"), prompt: Text("e.g. : 24.5"))
+            //                .keyboardType(  .decimalPad)
             
             // Output
             Text("Area:")
                 .bold()
             
-            Text("314.2 square units")
+            Text("\(area) square units")
             
             Spacer()
             
@@ -63,5 +73,6 @@ struct CircleView_Previews: PreviewProvider {
         NavigationView{
             CircleView()
         }
+        .preferredColorScheme(.dark)
     }
 }
